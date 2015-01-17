@@ -1,2 +1,2 @@
 # nacholibre
-Icebox project to play with scraping and Amazong API
+Icebox project to play with scraping and Amazon API
