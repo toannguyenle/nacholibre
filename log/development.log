@@ -1,0 +1,544 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:43:37 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 16ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:45:16 -0800
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/toannl/icebox/nacholibre/nacholibra_rails/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:46:47 -0800
+
+ActionController::RoutingError (uninitialized constant ApplicationControler):
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:46:57 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 373ms (Views: 372.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:46:57 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:46:57 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:46:57 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:46:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:46:57 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:54:16 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 147ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:54:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:16 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:54:25 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 108ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:54:25 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:25 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:25 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:25 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:54:55 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:54:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:54:55 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:55:11 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 99ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:55:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:55:12 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:55:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:55:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:55:12 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:56:34 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:56:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:56:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:56:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:56:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:56:34 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:57:36 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:57:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:37 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:57:42 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-16 21:57:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:42 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-16 21:57:42 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:58:50 -0800
+
+SyntaxError (/Users/toannl/icebox/nacholibre/nacholibra_rails/app/controllers/home_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting keyword_end):
+  app/controllers/home_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:59:17 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 111ms
+
+NoMethodError (undefined method `html_safe' for #<Nokogiri::HTML::Document:0x007fd63c2660f0>):
+  app/controllers/home_controller.rb:12:in `index'
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:59:19 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `html_safe' for #<Nokogiri::HTML::Document:0x007fd63cbc71f8>):
+  app/controllers/home_controller.rb:12:in `index'
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 21:59:26 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 78ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:00:13 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 101ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:00:15 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 100ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:00:15 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 91ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:00:24 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 79ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:00:25 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 95ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:00:38 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 87ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:00:41 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 92ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:01:53 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 160ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:03:59 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 198ms
+
+NoMethodError (undefined method `html_safe' for #<Nokogiri::HTML::Document:0x007fd63c29d5c8>):
+  app/controllers/home_controller.rb:13:in `index'
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:04:10 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 89ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:04:44 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 247ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:06:30 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 305ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - blossom.xml):
+  app/controllers/home_controller.rb:8:in `initialize'
+  app/controllers/home_controller.rb:8:in `open'
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:07:00 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 313ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:07:23 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 92ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:07:31 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 38ms
+
+Errno::ECONNREFUSED (Connection refused - connect(2) for "ls2pac.lapl.org" port 443):
+  app/controllers/home_controller.rb:7:in `index'
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:07:42 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 82ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:07:51 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 79ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:08:04 -0800
+
+SyntaxError (/Users/toannl/icebox/nacholibre/nacholibra_rails/app/controllers/home_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/home_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:08:09 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 86ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:08:22 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 89ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:09:54 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 80ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:10:01 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 74ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:10:42 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 87ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-16 22:10:49 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 100ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-17 09:21:39 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.2ms)
+Completed 200 OK in 128ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-17 10:06:26 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 754ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-17 10:06:37 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 702ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-17 10:08:33 -0800
+Processing by HomeController#index as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 718ms (Views: 1.4ms | ActiveRecord: 0.0ms)
