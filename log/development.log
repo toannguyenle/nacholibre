@@ -1133,3 +1133,25 @@ ArgumentError ('#<Nokogiri::HTML::Document:0x3fc9d99af3fc name="document" childr
 
 Started GET "/" for 127.0.0.1 at 2015-01-29 17:35:52 -0800
 Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 14311244ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/toannl/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-29 21:34:24 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 826ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-29 21:34:24 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 721ms (Views: 15.8ms | ActiveRecord: 0.0ms)
